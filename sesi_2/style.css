@@ -1,0 +1,393 @@
+/* style.css */
+
+/* --- General Styling --- */
+body {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter dari Google Fonts */
+    line-height: 1.6; /* Tinggi baris untuk keterbacaan */
+    color: #333; /* Warna teks default */
+    background-color: #f8f8f8; /* Warna latar belakang halaman */
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased; /* Membuat teks lebih halus di WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Membuat teks lebih halus di Firefox */
+}
+
+.container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Tengah konten di halaman */
+    padding: 0 1rem; /* Padding samping untuk responsivitas */
+}
+
+/* --- Header Styling --- */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 0.5rem; /* Rounded corners bawah kiri */
+    border-bottom-right-radius: 0.5rem; /* Rounded corners bawah kanan */
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8B4513; /* Warna cokelat kopi */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .logo:hover {
+    color: #A0522D; /* Warna cokelat yang sedikit berbeda saat hover */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Jarak antar item navigasi */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D2691E; /* Warna oranye kecoklatan */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: #D2691E;
+}
+
+/* --- Main Content Sections --- */
+main section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 0.75rem; /* Rounded corners untuk setiap section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem; /* Jarak antar section */
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --- Hero Section --- */
+#home {
+    background-color: #D2691E; /* Warna oranye kecoklatan */
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+#home p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #D2691E;
+    padding: 0.8rem 2rem;
+    border-radius: 9999px; /* Bentuk pil */
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px); /* Efek sedikit naik saat hover */
+}
+
+/* --- Menu Section --- */
+#menu .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Kolom responsif */
+    gap: 2rem;
+}
+
+#menu .grid > div {
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#menu .grid > div:hover {
+    transform: translateY(-5px); /* Efek naik saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#menu .grid img {
+    width: 100%;
+    height: 12rem; /* Tinggi gambar tetap */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#menu .grid h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #8B4513;
+    margin-bottom: 0.5rem;
+}
+
+#menu .grid p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+#menu .grid span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #D2691E;
+}
+
+/* --- About Us Section --- */
+#about .flex-col {
+    flex-direction: column;
+}
+
+#about .md\:flex-row {
+    flex-direction: row;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 1.05rem;
+    color: #444;
+}
+
+/* --- Gallery Section --- */
+#gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#gallery img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.03); /* Efek zoom sedikit saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Contact Section --- */
+#contact .flex-col {
+    flex-direction: column;
+}
+
+#contact .md\:flex-row {
+    flex-direction: row;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+#contact p strong {
+    color: #555;
+}
+
+#contact form label {
+    font-weight: 600;
+    color: #555;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border-color: #D2691E;
+    box-shadow: 0 0 0 3px rgba(210, 105, 30, 0.2);
+}
+
+#contact form button[type="submit"] {
+    background-color: #D2691E;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact form button[type="submit"]:hover {
+    background-color: #A0522D;
+    transform: translateY(-2px);
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-top-left-radius: 0.75rem; /* Rounded corners atas kiri */
+    border-top-right-radius: 0.75rem; /* Rounded corners atas kanan */
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #D2691E;
+}
+
+/* --- Responsive Adjustments (Media Queries) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    main section {
+        padding: 1.5rem;
+    }
+
+    #menu .grid,
+    #gallery .grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+    }
+
+    #about .flex-col,
+    #contact .flex-col {
+        flex-direction: column;
+    }
+
+    #about .md\:w-1\/2,
+    #contact .md\:w-1\/2 {
+        width: 100%;
+    }
+
+    #about img {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    main section h2 {
+        font-size: 2rem;
+    }
+
+    #menu .grid h3 {
+        font-size: 1.2rem;
+    }
+
+    #menu .grid span {
+        font-size: 1rem;
+    }
+}

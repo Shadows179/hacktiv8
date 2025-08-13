@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Coffee Shop Kamu - Kopi Terbaik untuk Harimu</title>
+    <!-- Deskripsi singkat coffee shop kamu, penting untuk SEO -->
+    <meta name="description" content="Nikmati kopi spesial, suasana nyaman, dan camilan lezat di [Nama Coffee Shop Kamu]. Tempat nongkrong favoritmu!">
+    <!-- Kata kunci terkait coffee shop kamu -->
+    <meta name="keywords" content="coffee shop, kopi, kafe, tempat nongkrong, [nama kota/daerah], menu kopi, barista">
+    
+    <!-- Link ke stylesheet CSS eksternal. Pastikan file 'style.css' ada di dalam folder 'css' -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link ke Font Google (contoh: Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN untuk styling cepat (opsional, bisa diganti dengan CSS kustom) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS untuk font Inter dan styling dasar */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Tambahkan styling kustom lainnya di sini atau di style.css */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
+    <!-- Header: Biasanya berisi logo dan navigasi utama -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
+        <!-- Logo atau Nama Coffee Shop -->
+        <a href="#" class="text-2xl font-bold text-amber-800">Nama Coffee Shop Kamu</a>
+        
+        <!-- Navigasi Utama -->
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-700 hover:text-amber-600 font-semibold transition duration-300">Beranda</a></li>
+                <li><a href="#menu" class="text-gray-700 hover:text-amber-600 font-semibold transition duration-300">Menu</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-amber-600 font-semibold transition duration-300">Tentang Kami</a></li>
+                <li><a href="#gallery" class="text-gray-700 hover:text-amber-600 font-semibold transition duration-300">Galeri</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-amber-600 font-semibold transition duration-300">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto mt-8 p-4">
+        <!-- Hero Section: Bagian paling atas, biasanya berisi gambar besar dan ajakan -->
+        <section id="home" class="bg-amber-700 text-white p-8 md:p-16 text-center rounded-lg shadow-lg mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Nikmati Setiap Tegukan di [Nama Coffee Shop Kamu]</h1>
+            <p class="text-lg md:text-xl mb-6">Temukan kopi favoritmu, suasana yang hangat, dan momen tak terlupakan.</p>
+            <a href="#menu" class="bg-white text-amber-700 px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300 shadow-md">Lihat Menu Kami</a>
+        </section>
+
+        <!-- Menu Section: Menampilkan daftar produk kopi dan makanan -->
+        <section id="menu" class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-8">Menu Pilihan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Contoh Item Menu 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <img src="https://placehold.co/300x200/F5DEB3/8B4513?text=Espresso" alt="Espresso" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-2">Espresso</h3>
+                    <p class="text-gray-700 mb-3">Kopi hitam pekat dengan crema sempurna, cocok untuk memulai harimu.</p>
+                    <span class="text-lg font-bold text-amber-700">Rp 25.000</span>
+                </div>
+                <!-- Contoh Item Menu 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <img src="https://placehold.co/300x200/F5DEB3/8B4513?text=Cappuccino" alt="Cappuccino" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-2">Cappuccino</h3>
+                    <p class="text-gray-700 mb-3">Perpaduan sempurna espresso, susu steam, dan busa lembut.</p>
+                    <span class="text-lg font-bold text-amber-700">Rp 35.000</span>
+                </div>
+                <!-- Contoh Item Menu 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <img src="https://placehold.co/300x200/F5DEB3/8B4513?text=Croissant" alt="Croissant" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-2">Butter Croissant</h3>
+                    <p class="text-gray-700 mb-3">Croissant renyah dan gurih, teman sempurna untuk kopi Anda.</p>
+                    <span class="text-lg font-bold text-amber-700">Rp 20.000</span>
+                </div>
+                <!-- Tambahkan lebih banyak item menu di sini -->
+            </div>
+        </section>
+
+        <!-- About Us Section: Informasi tentang coffee shop -->
+        <section id="about" class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-8">Tentang Kami</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/F5DEB3/8B4513?text=Interior+Coffee+Shop" alt="Interior Coffee Shop" class="w-full rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        [Nama Coffee Shop Kamu] didirikan dengan passion untuk menyajikan kopi berkualitas tinggi dan menciptakan tempat yang nyaman bagi komunitas. Kami percaya bahwa secangkir kopi bukan hanya minuman, tetapi juga pengalaman.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Dengan biji kopi pilihan dari petani lokal dan internasional, serta barista berpengalaman, kami berkomitmen untuk memberikan pengalaman kopi terbaik untuk setiap pelanggan kami.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section: Menampilkan foto-foto coffee shop atau produk -->
+        <section id="gallery" class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-8">Galeri Kami</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="https://placehold.co/400x300/F5DEB3/8B4513?text=Foto+Kopi+1" alt="Foto Kopi 1" class="w-full h-48 object-cover rounded-lg shadow-sm">
+                <img src="https://placehold.co/400x300/F5DEB3/8B4513?text=Foto+Interior+2" alt="Foto Interior 2" class="w-full h-48 object-cover rounded-lg shadow-sm">
+                <img src="https://placehold.co/400x300/F5DEB3/8B4513?text=Foto+Barista" alt="Foto Barista" class="w-full h-48 object-cover rounded-lg shadow-sm">
+                <img src="https://placehold.co/400x300/F5DEB3/8B4513?text=Foto+Suasana" alt="Foto Suasana" class="w-full h-48 object-cover rounded-lg shadow-sm">
+                <!-- Tambahkan lebih banyak gambar di sini -->
+            </div>
+        </section>
+
+        <!-- Contact Section: Informasi kontak dan formulir kontak (opsional) -->
+        <section id="contact" class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-8">Hubungi Kami</h2>
+            <div class="flex flex-col md:flex-row justify-around items-start gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-4">Informasi Kontak</h3>
+                    <p class="text-gray-700 mb-2"><strong>Alamat:</strong> Jl. Contoh Kopi No. 45, Serang, Banten</p>
+                    <p class="text-gray-700 mb-2"><strong>Telepon:</strong> (021) 123-4567</p>
+                    <p class="text-gray-700 mb-2"><strong>Email:</strong> info@namacoffeeshopkamu.com</p>
+                    <p class="text-gray-700 mb-2"><strong>Jam Buka:</strong> Setiap hari, 08:00 - 22:00</p>
+                    <!-- Link ke Google Maps (opsional) -->
+                    <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank" class="text-amber-700 hover:underline mt-4 inline-block">Lihat di Google Maps</a>
+                </div>
+                
+                <!-- Formulir Kontak Sederhana (opsional) -->
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold text-amber-900 mb-4">Kirim Pesan</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="email@contoh.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Pesan:</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Informasi copyright, link sosial media, dll. -->
+    <footer class="bg-gray-800 text-white py-8 mt-12 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2025 [Nama Coffee Shop Kamu]. Semua Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Contoh link sosial media -->
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
