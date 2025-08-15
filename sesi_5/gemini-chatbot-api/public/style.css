@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 20px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+.message.user {
+  background-color: #d1e7ff;
+  float: right;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #dff6dd;
+  float: left;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+.message-container {
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.message-container.user {
+  text-align: right;
+}
+
+.message-container.bot {
+  text-align: left;
+}
+
+.timestamp {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 4px;
+}
+
+.message.bot {
+  text-align: left;
+  white-space: pre-wrap; /* Pertahankan format baris baru */
+  line-height: 1.5;
+}
+
+.message strong {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.message .bullet-points {
+  display: block;
+  margin-left: 20px;
+}
+
+.message .bullet-points li {
+  margin-bottom: 8px;
+}
+
+/* Gaya untuk bullet points */
+.message.bot:before {
+  content: "•";
+  margin-right: 5px;
+  color: #1a73e8;
+}
+
+/* Container untuk tata letak yang lebih baik */
+.message-container {
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.message-container.user {
+  text-align: right;
+}
+
+.message-container.bot {
+  text-align: left;
+}
+
+.timestamp {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 4px;
+}
